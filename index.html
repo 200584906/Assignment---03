@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Smoothy</title>
+  <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-left">Mr. Smoothy</div>
+      <div class="navbar-center"><img src="Img/mr_S-removebg-preview.png"></div>
+      <div class="navbar-right" id="time"></div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Here we go...</h1>
+    <form id="smoothieForm">
+      <fieldset>
+        <legend>Customize Your Smoothie</legend>
+
+        <!-- Customer Name -->
+        <p>
+          <label for="customerName">Your Name:</label>
+          <input type="text" id="customerName" name="customerName" required>
+        </p>
+
+        <!-- Smoothie Size -->
+        <p>
+          <label for="size">Size:</label>
+          <select id="size" name="size" required>
+            <option value="">Select Size</option>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+            <option value="Large">Xtra-Large</option>
+          </select>
+        </p>
+
+        <!-- Ingredients -->
+        <p>
+          <label>Ingredients:</label>
+          <input type="checkbox" id="ingredient1" name="ingredients" value="Strawberries">
+          <label for="ingredient1">Strawberries</label>
+
+          <input type="checkbox" id="ingredient2" name="ingredients" value="Banana">
+          <label for="ingredient2">Banana</label>
+
+          <input type="checkbox" id="ingredient3" name="ingredients" value="Blueberries">
+          <label for="ingredient3">Blueberries</label>
+
+          <input type="checkbox" id="ingredient4" name="ingredients" value="Mango">
+          <label for="ingredient4">Mango</label>
+
+          <input type="checkbox" id="ingredient5" name="ingredients" value="Pineapple">
+          <label for="ingredient5">Pineapple</label>
+
+          <input type="checkbox" id="ingredient6" name="ingredients" value="Spinach">
+          <label for="ingredient6">Spinach</label>
+
+          <input type="checkbox" id="ingredient7" name="ingredients" value="Avocado">
+          <label for="ingredient7">Avocado</label>
+          <input type="checkbox" id="ingredient7" name="ingredients" value="Avocado">
+          <label for="ingredient7">jelly</label>
+        </p>
+
+        <!-- Base Options -->
+        <p>
+          <label for="base">Base:</label>
+          <select id="base" name="base" required>
+            <option value="">Select Base</option>
+            <option value="Milk">Milk</option>
+            <option value="Almond Milk">Almond Milk</option>
+            <option value="Coconut Water">Coconut Water</option>
+            <option value="Water">Water</option>
+            <option value="Yogurt">Yogurt</option>
+            <option value="Wheyprotine">WheyProtein</option>
+
+          </select>
+        </p>
+
+        <!-- Toppings -->
+        <p>
+          <label>Extra Toppings:</label>
+          <input type="checkbox" id="topping1" name="toppings" value="Chia Seeds">
+          <label for="topping1">Chia Seeds</label>
+
+          <input type="checkbox" id="topping2" name="toppings" value="Protein Powder">
+          <label for="topping2">Protein Powder</label>
+
+          <input type="checkbox" id="topping3" name="toppings" value="Honey">
+          <label for="topping3">Honey</label>
+
+          <input type="checkbox" id="topping4" name="toppings" value="Flax Seeds">
+          <label for="topping4">Flax Seeds</label>
+        </p>
+
+        <!-- Quantity -->
+        <p>
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+        </p>
+
+        <!-- Submit & Reset Buttons -->
+        <p class="center">
+          <input type="submit" value="Order">
+          <input type="reset" value="Reset">
+        </p>
+      </fieldset>
+    </form>
+
+    <section id="orderSummary">
+      <h2>Smoothie</h2>
+      <p id="output"></p>
+    </section>
+  </main>
+
+  <script src="JS/index.js"></script>
+</body>
+</html>
